@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="tabel.css">
+    <link rel="stylesheet" href="../navigasi.css">
+    <link rel="stylesheet" href="../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+   <!--header untuk judul sub bab-->
+   <div class="header">
+    <center>B.	Sumber Energi</center>
+</div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <nav class="sidebar">
+    <div class="text"><img src="../gambar/LOGO.png"></div>
+    <ul>
+      <li class="beranda"><a href="../../index.html">Beranda</a></li>
+      <li>
+        <a href="#"  class="energi">Energi
+          <span class="fas fa-caret-down first"></span>
+        </a>
+        <ul class="energi-tampil">
+          <li><a 
+                  href="../bab 1/1/1.html">Konsep Energi</a></li>
+      
+          <li><a 
+            href="../bab 1/2/1.html">Jenis-Jenis Energi</a></li>
+            
+          <li><a  
+            href="../bab 1/3/1.html">Perubahan Energi </a></li>
+            
+          <li><a 
+            href="../bab 1/4/1.html">Hukum Kekekalan Energi</a></li>
+          <li><a href="../bab 1/Kuis/kuis1.html">Kuis 1</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#" style="color: cyan; background-color: #043436" class="sumer">Sumber Energi
+          <span class="fas fa-caret-down second"></span>
+        </a>
+        <ul class="sumer-tampil">
+          <li><a style="color: cyan;" href="1.html">Materi</a></li>
+          <li><a href="Kuis/kuis2.html">Kuis 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"  class="sumber">Sumber Energi bagi Tubuh
+          <span class="fas fa-caret-down tiga"></span>
+        </a>
+        <ul class="sumber-tampil">
+          <li><a href="../bab 3/1.html">Materi</a></li>
+          <li><a href="../bab 3/Kuis/kuis3.html">Kuis 3</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#" class="transformasi">Transformasi Energi dalam Sel
+        <span class="fas fa-caret-down empat"></span>
+      </a>
+      <ul class="transformasi-tampil">
+        <li><a href="../bab 4/1/1.html">Fenomena Transformasi Energi</a></li>
+        <li><a href="../bab 4/2/1.html">Metabolisme Sel</a></li>
+        <li><a href="../bab 4/3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+        <li><a href="../bab 4/Kuis/kuis2.html">Kuis 4</a></li>
+      </ul>
+    </li>
+      <li><a href="../Evaluasi/eva.html">EVALUASI</a></li>
+
+    </ul>
+</nav>
+<!-- javascript untuk navigasi-->
+<script>
+  function drop(){
+    $('nav ul .sumer-tampil').toggleClass("show1");
+    $('nav ul .second').toggleClass("rotate");
+   }
+</script>
+    <!--class untuk konten-->
+    <div class="content">
+      <h3> <img src="../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      <div class="canvas">
+       <!--soal latihan-->
+      <div class="canvas">
+      Setelah membaca materi mengenai sumber energi, jawablah latihan berikut ini untuk menguji pemahamanmu.
+      <br>
+         <p><b>Petunjuk :</b></p>
+           <ol type="1" style="padding-left: 15px;">
+             <li>Golongkan sumber energi di bawah ini, apakah termasuk sumber energi terbarukan atau tak terbarukan</li>
+             <li>Tekan tombol cek untuk melihat hasil jawaban. Kolom pada tabel akan berwarna hijau jika jawaban benar dan berwarna merah ketika jawaban salah.</li>
+           </ol>
+      </div>
+           <br><br>
+           <table class="tbl">
+             <tr>
+               <th class="no">No.</th>
+               <th class="gambar">Gambar</th>
+               <th class="jenis">Jenis</th>
+             </tr>
+             <!--soal 1-->
+             <tr>
+              <td class="no">1.</td>
+               <td class="gambar"><img src="gambar/lpg.jpeg" width="150px"></td>
+               <td class="jenis" id="pil1">
+                  <label><input type="radio" name="pilihan1"  /><span>  Terbarukan</span></label>
+                  <br>
+                  <label><input type="radio" name="pilihan1" id="s1benar"  /><span>  Tak Terbarukan</span></label>
+              </td>
+             </tr>
+            
+             <!--soal 2-->
+             <tr>
+              <td class="no">2.</td>
+               <td class="gambar"><img src="gambar/solar.jpeg" width="150px"></td>
+               <td class="jenis" id="pil2">
+                  <label><input type="radio" name="pilihan2" id="s2benar" /><span>  Terbarukan</span></label>
+                  <br>
+                  <label><input type="radio" name="pilihan2"  /><span>  Tak Terbarukan</span></label>
+              </td>
+             </tr>
+
+             <!--soal 3-->
+             <tr>
+              <td class="no">3.</td>
+               <td class="gambar"><img src="gambar/kincir.jpg" width="150px"></td>
+               <td class="jenis" id="pil3">
+                  <label><input type="radio" name="pilihan3" id="s3benar" /><span>  Terbarukan</span></label>
+                  <br>
+                  <label><input type="radio" name="pilihan3"  /><span>  Tak Terbarukan</span></label>
+              </td>
+             </tr>
+
+             <!--soal 4-->
+             <tr>
+              <td class="no">4.</td>
+               <td class="gambar"><img src="gambar/pom.jpeg" width="150px"></td>
+               <td class="jenis" id="pil4">
+                  <label><input type="radio" name="pilihan4"  /><span>  Terbarukan</span></label>
+                  <br>
+                  <label><input type="radio" name="pilihan4" id="s4benar" /><span>  Tak Terbarukan</span></label>
+              </td>
+             </tr>
+
+          </table>
+          <br>
+          <center>
+            <button class="btnvidio" style="background-color: teal;" onclick="cek();">Cek Jawaban</button>
+          </center>     
+
+
+     </div>
+     <br>
+     <!--Kesimpulan-->
+     <div>
+      <h3> <img src="../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+        <div class="kesimpulansebelum" id="kesimpulansebelum" style="color: orange;">
+          <center>
+            <b> KESIMPULAN AKAN MUNCUL SETELAH MENJAWAB LATIHAN</b>
+          </center>
+      </div>
+      <div class="kesimpulan" id="kesimpulan">
+        <ul type="square">
+          <li>Sumber energi adalah segala sesuatu yang menghasilkan energi yang terbagi menjadi sumber energi tidak terbarukan dan sumber energi yang terbarukan.</li>
+          <li>Sumber energi yang tidak terbarukan merupakan sumber energi yang ketersediaannya terbatas dan sulit untuk diadakan kembali. Sumber energi yang tidak terbarukan di antaranya energi hasil tambang bumi dan energi nuklir.</li>
+          <li>Sumber energi yang terbarukan adalah sumber energi yang dapat digunakan terus-menerus karena ketersediaannya dapat diusahakan kembali. Sumber energi yang terbarukan di antaranya matahari, air, angin, tidal, biomassa dan hidrogen</li>
+
+        </ul>
+      </div>
+     </div>
+    </div>
+    </div>
+
+    <br><br>
+  </div>
+    <!--untuk mengakses file javascript-->
+    <script src="../navigasi.js"></script>
+    <script src="3.js"></script>
+
+ <!--footer halaman yang berisi navigasi page halaman-->
+ <div class="footer">
+  <div class="navigasibawah">
+    <center>
+      <a href="2.html"><button >Sebelumnya</button></a>
+      <a href="1.html"><button >1</button></a>
+      <a href="2.html"><button >2</button></a>
+      <a href="3.html"><button class="btn1">3</button></a>
+      <a href="Kuis/kuis2.html"><button >Selanjutnya</button></a>
+    </center>
+  </div>
+  </div>
+  </body>
+</html>

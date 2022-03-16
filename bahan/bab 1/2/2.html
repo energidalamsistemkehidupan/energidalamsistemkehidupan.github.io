@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>A.	Apa yang Dimaksud dengan Energi?</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text"><img src="../../gambar/LOGO.png"></div>
+      <ul>
+        <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+        <li>
+          <a href="#" style="color: cyan; background-color: #043436" class="energi">Energi
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="energi-tampil">
+            <li><a  
+                    href="../1/1.html">Konsep Energi</a></li>
+        
+            <li><a  style="color: cyan;" 
+              href="1.html">Jenis-Jenis Energi</a></li>
+              
+            <li><a  
+              href="../3/1.html">Perubahan Energi </a></li>
+              
+            <li><a  
+              href="../4/1.html">Hukum Kekekalan Energi</a></li>
+            <li><a href="../Kuis/kuis1.html">Kuis 1</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#" class="sumer">Sumber Energi
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="sumer-tampil">
+            <li><a href="../../bab 2/1.html">Materi</a></li>
+            <li><a href="../../bab 2/Kuis/kuis2.html">Kuis 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="sumber">Sumber Energi bagi Tubuh
+            <span class="fas fa-caret-down tiga"></span>
+          </a>
+          <ul class="sumber-tampil">
+            <li><a href="../../bab 3/1.html">Materi</a></li>
+            <li><a href="../../bab 3/Kuis/kuis3.html">Kuis 3</a></li>
+          </ul>
+        </li>
+        <li>
+        <a href="#" class="transformasi">Transformasi Energi dalam Sel
+          <span class="fas fa-caret-down empat"></span>
+        </a>
+        <ul class="transformasi-tampil">
+          <li><a href="../../bab 4/1/1.html">Fenomena Transformasi Energi</a></li>
+          <li><a href="../../bab 4/2/1.html">Metabolisme Sel</a></li>
+          <li><a href="../../bab 4/3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+          <li><a href="../../bab 4/Kuis/kuis4.html">Kuis 4</a></li>
+        </ul>
+      </li>
+        <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+      </ul>
+  </nav>
+     <!-- javascript untuk navigasi-->
+     <script>
+      function drop(){
+      $('nav ul .energi-tampil').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+       }
+    </script>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="canvas">
+    <p>2. Energi Potensial Elastis</p> 
+      <center><img src="gambar/keta.jpeg" width="250px" height="auto">
+        <p class="caption">Gambar 2 Ketapel </p></center>
+    <p>&nbsp &nbsp &nbsp Energi potensial elastis atau pegas adalah energi yang diperlukan untuk menekan atau meregangkan pegas. Contohnya pada tali busur yang ditarik. Usaha yang dilakukan oleh pemanah pada tali busur, menyebabkan tali busur menyimpan energi. Saat tali busur dan anak panah dilepaskan, energi berubah menjadi energi kinetik. Energi yang tersimpan dalam tali busur yang meregang disebut dengan energi potensial elastis.</p>
+    <p>&nbsp &nbsp &nbsp Energi potensial elastis ini dimiliki oleh benda-benda elastis, seperti karet, bola karet, pegas, dan lain-lain. Rumus energi potensial elastis adalah :</p>
+    <br><p class="rumus">$E_P = \frac{1}{2}.k.\Delta x^{2}$</p><br>
+  <p>&nbsp &nbsp &nbsp Oleh karena <i>F = k ∆x</i>, energi potensial elastis juga dapat dituliskan dalam persamaan berikut.</p>
+  <br><p class="rumus">$E_P = \frac{1}{2}.F.\Delta x^{2}$</p>
+  <p>Keterangan:</p>
+   <p>Ep = energi potensial (Joule)</p> 
+  <p>F = gaya pegas (N)</p>  
+    <p>k  = konstanta pegas (N/m)</p>
+    <p>Δx  = perubahan panjang pegas (m)</p>
+  </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
+      <div class="canvas">&nbsp &nbsp &nbsp Untuk lebih memahami mengenai energi potensial elastis. Perhatikan video demonstrasi berikut ini dengan seksama.</b>
+        <br>
+        <center>
+          <video id="vidio" controls>
+            <source src="../gambar/migrasi hewan.mp4">
+          </video>
+        </center>
+        <br>
+        <!--untuk kontrol vidio-->
+        <div class="canvas"	>
+          <center>
+            <button class="btnvidio" onclick="burung()" type="button">Burung</button>
+            <button class="btnvidio" onclick="salmon()" type="button">Ikan Salmon</button>
+            <button class="btnvidio" onclick="penyu()" type="button">Penyu</button>
+            <button class="btnvidio" onclick="lobster()" type="button">Lobster Duri</button>
+            <button class="btnvidio" onclick="bakteri()" type="button">Bakteri</button>
+          </center>
+        </div>
+        <br>
+      </div>
+    <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+       <div class="sebelum" style="color: #f38630;">
+          <center>
+            <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDEO</b>
+          </center>
+      </div>
+      <div class="kesimpulan">
+        <ul>
+          <li>Besarnya energi potensial elastis berbanding lurus dengan konstanta pegas dan peregangan. Semakin besar konstantas pegas dan semakin jauh peregangan, maka energi potensial elastisnya semakin besar. Berlaku sebaliknya, jika konstanta pegas semakin kecil dan peregangan lebih dekat, maka energi potensial elastisnya semakin kecil.</li>
+      </ul>
+      </div>
+      </div>
+      <br>
+
+       <!--contoh muncul setelah selesai menonton vidio-->
+       <br>
+       <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cekcontoh()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh (Klik)</p></div>
+       <div id="contoh" style="display: none;" class="canvas">	
+        <div class="canvas">
+        <div class="soal" id="contoh1sow" >
+     	Sebuah pegas memiliki konstanta sebesar 200 N/m. Saat pegas ditekan sejauh 20 cm, berapa energi yang tersimpan oleh pegas?
+    
+         <br><b>Diketahui: </b>
+          <br><i>k</i> = 200 N/m 
+          <br><i>Δx</i> = 20 cm = 0,2 m  
+    
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>p</sub></i>=...?
+    
+          <br><b>Jawab: </b>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.k.\Delta x^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.200. 0,2^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.F.(0,04)$</i>
+          <br><i>E<sub>p</sub>= 4 J</i>
+          <br>Sehingga, energi potensial pada pegas itu sebesar 4 Joule.
+        </div>
+        <div class="soal" id="contoh2sow" >
+          Untuk meregangkan sebuah pegas sejauh 5 cm diperlukan gaya sebesar 20 N. Energi potensial pegas ketika meregang sejauh 10 cm adalah …
+          <br><b>Diketahui:</b>
+          <br><i>F</i> = 20 N
+          <br><i>Δx</i> = 5 cm = 0,05 m 
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>p</sub></i> ketika Δx=10 cm = 0,1 m
+          <br><b>Jawab: </b>
+          <br><i>F = k.Δx</i>
+          <br><i>20 = k.0,05</i>
+          <br><i>k = 400 N/m</i>
+          <br>Maka didapat nilai k = 400 N/m
+          <br>Selanjutnya, kita hitung energi potensial pada saat pegas meregang 0,1 m.
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.k.\Delta x^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.400. (0,1)^{2}$</i>
+          <br><i>E<sub>p</sub></i>= $\frac{1}{2}.400. (0,01)$
+          <br><i>E<sub>p</sub></i>= 2 J
+          <br>Sehingga, energi potensial pada pegas yang meregang 0,1 m sebesar 2 Joule.
+        </div>
+        <div class="soal" id="contoh3sow" >
+          	Gambar berikut merupakan perubahan pegas sebelum diberi beban dan setelah diberi beban.<br>
+            <img src="gambar/ela1.PNG" width="150px"><br>
+            Pertambahan panjang pegas tersebut adalah …(g = 10 m/s<sup>2</sup>)
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 2 kg
+          <br><i>k</i> = 100 N/m 
+          <br><i>g</i> = 10 m/s<sup>2</sup>
+          <br><b>Ditanya: </b>
+          <br><i>Δx</i>=...?
+          <br><b>Jawab: </b>
+          <br><i>F = k.Δx</i>
+          <br><i>m.g= k.Δx</i>
+          <br><i>2.10= 100.Δx</i>
+          <br><i>Δx= 0,2 m</i>
+          <br>Sehingga, pertambahan panjang pegas sebesar 0,2 m.
+        </div>
+      </div>
+      <br>
+  <center>
+  <button class="btnkecil" style="background:black;" id="tombolcon1" onclick="contoh1_sow()" type="button">Contoh 1</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombolcon2" onclick="contoh2_sow()" type="button">Contoh 2</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombolcon3" onclick="contoh3_sow()" type="button">Contoh 3</button></center>
+       </div>
+       <br>
+
+         <!--latihan soal-->
+       <br>
+       <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="ceklatihan()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></div>
+       <div id="latihan" style="display: none;" class="canvas">	
+        Gunakan ( . ) sebagai koma
+          <!--soal1-->
+        <div class="canvas">
+          	Sebuah pegas memiliki konstanta sebesar 100 N/m. Saat pegas ditekan sejauh  30 cm, berapa energi yang tersimpan oleh pegas?
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check()" method="post">
+              <input id="myid" name="myvar" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              Joule
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah1" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 1-->      
+         <div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui: </b>
+          <br><i>k</i> = 100 N/m 
+          <br><i>Δx</i> = 30 cm = 0,3 m  
+    
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>p</sub></i>=...?
+    
+          <br><b>Jawab: </b>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.k.\Delta x^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.100. 0,3^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.F.(0,09)$</i>
+          <br><i>E<sub>p</sub>= 4,5 J</i>
+          <br>Sehingga, energi potensial pada pegas itu sebesar 4,5 Joule.
+        </div>
+        <br>
+        <!--soal 2-->
+        <div class="canvas">
+          	Untuk meregangkan sebuah pegas sejauh 4 cm diperlukan gaya sebesar 20 N. Berapakah energi potensial pegas ketika meregang sejauh 10 cm adalah?
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check2()" method="post">
+              <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              Joule
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah2" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 2-->      
+         <div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui:</b>
+          <br><i>F</i> = 20 N
+          <br><i>Δx</i> = 4 cm = 0,04 m 
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>p</sub></i> ketika Δx=10 cm = 0,1 m
+          <br><b>Jawab: </b>
+          <br><i>F = k.Δx</i>
+          <br><i>20 = k.0,04</i>
+          <br><i>k = 500 N/m</i>
+          <br>Maka didapat nilai k = 500 N/m
+          <br>Selanjutnya, kita hitung energi potensial pada saat pegas meregang 0,1 m.
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.k.\Delta x^{2}$</i>
+          <br><i>E<sub>p</sub>= $\frac{1}{2}.500. (0,1)^{2}$</i>
+          <br><i>E<sub>p</sub></i>= $\frac{1}{2}.500. (0,01)$
+          <br><i>E<sub>p</sub></i>= 2,5 J
+          <br>Sehingga, energi potensial pada pegas yang meregang 0,1 m sebesar 2 Joule.
+        </div>
+        <br>
+
+        <!--soal 3-->
+        <div class="canvas">
+          Gambar berikut merupakan perubahan pegas sebelum diberi beban dan setelah diberi beban.<br>
+          <img src="gambar/ela2.PNG" width="150px"><br>
+          Jika percepatan gravitasi 10 m/s<sup>2</sup>, berapakah pertambahan panjang pegas tersebut ?
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check3()" method="post">
+              <input id="myid3" name="myvar3" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              m
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah3" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 3-->      
+         <div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 4 kg
+          <br><i>k</i> = 100 N/m 
+          <br><i>g</i> = 10 m/s<sup>2</sup>
+          <br><b>Ditanya: </b>
+          <br><i>Δx</i>=...?
+          <br><b>Jawab: </b>
+          <br><i>F = k.Δx</i>
+          <br><i>m.g= k.Δx</i>
+          <br><i>4.10= 100.Δx</i>
+          <br><i>Δx= 0,4 m</i>
+          <br>Sehingga, pertambahan panjang pegas sebesar 0,4 m.
+        </div>
+        <br>
+
+       </div><!-- end latihan soal-->
+       <br>
+
+       <br>
+       
+    </div>
+    <!--untuk mengakses file javascript-->
+    <script src="2.js"></script>
+    <script src="../../navigasi.js"></script>
+
+    <!--framework untuk MathJax/latex (untuk menulis rumus)-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="1.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button class="btn1">2</button></a>
+          <a href="3.html"><button >3</button></a>
+          <a href="3.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

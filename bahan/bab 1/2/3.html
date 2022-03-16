@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>A.	Apa yang Dimaksud dengan Energi?</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text"><img src="../../gambar/LOGO.png"></div>
+      <ul>
+        <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+        <li>
+          <a href="#" style="color: cyan; background-color: #043436">Energi
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="energi-tampil">
+            <li><a  
+                    href="../1/1.html">Konsep Energi</a></li>
+        
+            <li><a  style="color: cyan;" 
+              href="1.html">Jenis-Jenis Energi</a></li>
+              
+            <li><a  
+              href="../3/1.html">Perubahan Energi </a></li>
+              
+            <li><a   
+              href="../4/1.html">Hukum Kekekalan Energi</a></li>
+            <li><a href="../Kuis/kuis1.html">Kuis 1</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#" class="sumer">Sumber Energi
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="sumer-tampil">
+            <li><a href="../../bab 2/1.html">Materi</a></li>
+            <li><a href="../../bab 2/Kuis/kuis2.html">Kuis 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="sumber">Sumber Energi bagi Tubuh
+            <span class="fas fa-caret-down tiga"></span>
+          </a>
+          <ul class="sumber-tampil">
+            <li><a href="../../bab 3/1.html">Materi</a></li>
+            <li><a href="../../bab 3/Kuis/kuis3.html">Kuis 3</a></li>
+          </ul>
+        </li>
+        <li>
+        <a href="#" class="transformasi">Transformasi Energi dalam Sel
+          <span class="fas fa-caret-down empat"></span>
+        </a>
+        <ul class="transformasi-tampil">
+          <li><a href="../../bab 4/1/1.html">Fenomena Transformasi Energi</a></li>
+          <li><a href="../../bab 4/2/1.html">Metabolisme Sel</a></li>
+          <li><a href="../../bab 4/3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+          <li><a href="../../bab 4/Kuis/kuis4.html">Kuis 4</a></li>
+        </ul>
+      </li>
+        <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+      </ul>
+  </nav>
+     <!-- javascript untuk navigasi-->
+     <script>
+      function drop(){
+      $('nav ul .energi-tampil').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+       }
+    </script>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        b.	Energi Kinetik
+      </div>
+      <div class="canvas">
+      <p>&nbsp &nbsp &nbsp Setiap materi yang berpindah atau bergerak memiliki energi yang disebut energi kinetik atau energi gerak. Energi kinetik adalah bentuk energi ketika suatu materi berpindah atau bergerak. Sebagai contoh, sebuah mobil yang sedang berjalan membawa barang, seperti ilustrasi dibawah ini.</p>
+   <br>
+      <center><img src="gambar/kin.gif" width="250px" height="auto">
+        <p class="caption">Gambar 3 Contoh energi kinetik</p></center>
+    <p>&nbsp &nbsp &nbsp Energi kinetik adalah energi yang dimiliki suatu benda yang sedang bergerak. Nilai energi kinetik berkaitan erat dengan massa dan kecepatan dari benda. Energi kinetik benda yang bergerak dapat dihitung dengan persamaan sebagai berikut.</p>
+  <br><p class="rumus"><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i></p><br>
+  <p>Keterangan:</p>
+   <p>Ek = energi kinetik (Joule)</p> 
+  <p>m = massa benda (kg)</p>  
+    <p>v  = kecepatan (m/s)</p>
+  </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
+      <div class="canvas">&nbsp &nbsp &nbsp Untuk lebih memahami mengenai energi kinetik. Perhatikan video demonstrasi berikut ini dengan seksama.</b>
+        <br>
+        <center>
+          <video id="vidio" controls>
+            <source src="../gambar/migrasi hewan.mp4">
+          </video>
+        </center>
+        <br>
+        <!--untuk kontrol vidio-->
+        <div class="canvas"	>
+          <center>
+            <button class="btnvidio" onclick="burung()" type="button">Burung</button>
+            <button class="btnvidio" onclick="salmon()" type="button">Ikan Salmon</button>
+            <button class="btnvidio" onclick="penyu()" type="button">Penyu</button>
+            <button class="btnvidio" onclick="lobster()" type="button">Lobster Duri</button>
+            <button class="btnvidio" onclick="bakteri()" type="button">Bakteri</button>
+          </center>
+        </div>
+        <br>
+      </div>
+    <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+       <div class="sebelum" style="color: #f38630;">
+          <center>
+            <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDEO</b>
+          </center>
+      </div>
+      <div class="kesimpulan">
+        <ul>
+          <li>Besarnya energi kinetik berbanding lurus dengan besarnya massa dan kecepatan gerak benda. Benda yang massa dan kecepatannya besar, pasti memiliki energi kinetik yang besar ketika bergerak. Begitu juga sebaliknya, benda yang massa dan kecepatannya kecil memiliki energi kinetik yang lebih kecil pula.</li>
+      </ul>
+      </div>
+      </div>
+      <br>
+
+       <!--contoh muncul setelah selesai menonton vidio-->
+       <br>
+       <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cekcontoh()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh (Klik)</p></div>
+       <div id="contoh" style="display: none;" class="canvas">	
+        <div class="canvas">
+        <div class="soal" id="contoh1sow" >
+        Sebuah sepeda yang massanya 40 kg bergerak dengan kecepatan 10 m/s. Tentukan besar energi kinetik sepeda tersebut!
+    
+         <br><b>Diketahui: </b>
+          <br><i>m</i> = 40 kg 
+          <br><i>v</i> = 10 m/s
+    
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>k</sub></i>=...?
+    
+          <br><b>Jawab: </b>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.40.10^{2}$</i>
+          <br><i>E<sub>k</sub>= 2000 J</i>
+          <br>Sehingga, energi kinetik pada sepeda itu sebesar 2000 Joule
+        </div>
+        <div class="soal" id="contoh2sow" >
+          Seorang siswa memukul bola kasti bermasa 70 gram dengan kecepatan 5 m/s. berapa energi kinetik yang dihasilkan bola kasti tersebut tersebut …
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 70 g = 0,07 kg
+          <br><i>v</i> = 5 m/s
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>k</sub></i>=...?
+          <br><b>Jawab: </b>
+          <br><i>E<sub>v</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>E<sub>v</sub>= $\frac{1}{2}.0,07.5^{2}$</i>
+          <br><i>E<sub>v</sub>= 0,875 J</i>
+          <br>Sehingga, energi kinetik pada bola kasti itu sebesar 0,875 Joule.
+        </div>
+        <div class="soal" id="contoh3sow" >
+          Sebuah sepeda yang massanya 40 kg bergerak dengan mengeluarkan energi kinetik sebesar 720 Joule. Tentukan Kecepatan sepeda tersebut!
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 40 kg
+          <br><i>E<sub>k</sub></i> = 720 J 
+          <br><b>Ditanya: </b>
+          <br><i>v</i>=...?
+          <br><b>Jawab: </b>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>720= $\frac{1}{2}.40.v^{2}$</i>
+          <br><i>$v^{2}$= 36</i>
+          <br><i>v= 6 m/s</i>
+          <br>Sehingga, kecepatan pada sepeda itu sebesar 6 m/s.
+        </div>
+      </div>
+      <br>
+  <center>
+  <button class="btnkecil" style="background:black;" id="tombolcon1" onclick="contoh1_sow()" type="button">Contoh 1</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombolcon2" onclick="contoh2_sow()" type="button">Contoh 2</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombolcon3" onclick="contoh3_sow()" type="button">Contoh 3</button></center>
+       </div>
+       <br>
+
+         <!--latihan soal-->
+       <br>
+       <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="ceklatihan()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></div>
+       <div id="latihan" style="display: none;" class="canvas">	
+        
+          <!--soal1-->
+        <div class="canvas">
+          	Seorang atlet menolak  peluru dengan kecepatan 7 m/s dan menghasilkan energi kinetik sebesar 98 Joule. Berapa massa dari peluru tersebut?
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check()" method="post">
+              <input id="myid" name="myvar" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              kg
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah1" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 1-->      
+         <div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui:</b>
+          <br><i>v</i> = 7 m/s 
+          <br><i>E<sub>k</sub></i> = 98 J
+          <br><b>Ditanya: </b>
+          <br><i>h</i>=...?
+          <br><b>Jawab: </b>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>98= $\frac{1}{2}.m.7^{2}$</i>
+          <br><i>m= 4 kg</i>
+          <br>Sehingga, massa peluru tersebut sebesar 4 kg.
+        </div>
+        <br>
+        <!--soal 2-->
+        <div class="canvas">
+          	Seekor burung sedang melayang terbang di atas tanah dengan kecepatan konstan sebesar 10 m/s. Jika massa burung adalah 2 kg, berapakah energi kinetik burung tersebut ?
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check2()" method="post">
+              <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              Joule
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah2" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 2-->      
+         <div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 2 kg
+          <br><i>v</i> = 10 m/s 
+          <br><b>Ditanya: </b>
+          <br><i>E<sub>k</sub></i>=...?
+          <br><b>Jawab: </b>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.2.10^{2}$</i>
+          <br><i>E<sub>k</sub>= 100 J</i>
+          <br>Sehingga, energi kinetik pada burung sebesar 100 Joule
+        </div>
+        <br>
+
+        <!--soal 3-->
+        <div class="canvas">
+          	Sebuah benda yang bermassa 4 kg bergerak dengan kecepatan 8 m/s. Tentukan besarnya energi kinetik benda tersebut!
+          <p style="color:black;"><b>JAWABAN</b></p>   
+          <br>
+          <form onsubmit="return check3()" method="post">
+              <input id="myid3" name="myvar3" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
+              Joule
+              <input  type="submit" value="Cek">
+          </form>      
+      </div>
+      <br>
+        <div id="jawabansalah3" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 3-->      
+         <div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:#07575B;color: #07575B;">
+          <h2>Jawaban benar</h2>
+          <br><b>Diketahui:</b>
+          <br><i>m</i> = 4 kg
+          <br><i>E<sub>k</sub></i> = 720 J 
+          <br><b>Ditanya: </b>
+          <br><i>v</i>=...?
+          <br><b>Jawab: </b>
+          <br><i>E<sub>k</sub>= $\frac{1}{2}.m.v^{2}$</i>
+          <br><i>E<s=>k</s= $\frac{1}{2}.4.8^{2}$</i>
+          <br><i>E<sub>k</sub>= 128 J</i>
+          <br>Sehingga, Energi kinetik pada benda adalah 128 Joule.
+        </div>
+        <br>
+
+       </div><!-- end latihan soal-->
+       <br>
+
+       <br>
+       
+    </div>
+    <!--untuk mengakses file javascript-->
+    <script src="3.js"></script>
+    <script src="../../navigasi.js"></script>
+
+    <!--framework untuk MathJax/latex (untuk menulis rumus)-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="2.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button class="btn1">3</button></a>
+          <a href="../3/1.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

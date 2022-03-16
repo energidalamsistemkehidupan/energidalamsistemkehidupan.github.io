@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>A. Apa yang Dimaksud dengan Energi?</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <nav class="sidebar">
+    <div class="text"><img src="../../gambar/LOGO.png"></div>
+    <ul>
+      <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+      <li>
+        <a href="#" style="color: cyan; background-color: #043436"  class="energi">Energi
+          <span class="fas fa-caret-down first"></span>
+        </a>
+        <ul class="energi-tampil">
+          <li><a  style="color: cyan;"
+                  href="1.html">Konsep Energi</a></li>
+      
+          <li><a  
+            href="../2/1.html">Jenis-Jenis Energi</a></li>
+            
+          <li><a  
+            href="../3/1.html">Perubahan Energi </a></li>
+            
+          <li><a  
+            href="../4/1.html">Hukum Kekekalan Energi</a></li>
+          <li><a href="../Kuis/kuis1.html">Kuis 1</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#" class="sumer">Sumber Energi
+          <span class="fas fa-caret-down second"></span>
+        </a>
+        <ul class="sumer-tampil">
+          <li><a href="../../bab 2/1.html">Materi</a></li>
+          <li><a href="../../bab 2/Kuis/kuis2.html">Kuis 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="sumber">Sumber Energi bagi Tubuh
+          <span class="fas fa-caret-down tiga"></span>
+        </a>
+        <ul class="sumber-tampil">
+          <li><a href="../../bab 3/1.html">Materi</a></li>
+          <li><a href="../../bab 3/Kuis/kuis3.html">Kuis 3</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#" class="transformasi">Transformasi Energi dalam Sel
+        <span class="fas fa-caret-down empat"></span>
+      </a>
+      <ul class="transformasi-tampil">
+        <li><a href="../../bab 4/1/1.html">Fenomena Transformasi Energi</a></li>
+        <li><a href="../../bab 4/2/1.html">Metabolisme Sel</a></li>
+        <li><a href="../../bab 4/3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+        <li><a href="../../bab 4/Kuis/kuis4.html">Kuis 4</a></li>
+      </ul>
+    </li>
+      <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+    </ul>
+</nav>
+<!-- javascript untuk navigasi-->
+<script>
+  function drop(){
+  $('nav ul .energi-tampil').toggleClass("show");
+  $('nav ul .first').toggleClass("rotate");
+   }
+</script>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+   <div class="canvas">
+       <div class="canvas">
+         <p><b>Petunjuk :</b></p>
+           <ol type="1" style="padding-left: 15px;">
+             <li>Soal berupa pilihan ganda berjumlah tiga soal.</li>
+             <li>Gunakan tombol dibawah soal untuk beralih ke soal lainnya.</li>
+             <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+           </ol>
+        </div>
+       <br>
+    <div class="canvas">   
+    <!--Soal 1-->
+    <div class="soal" id="soal1sow" >
+      <img src="gambar/susu.gif" width="250px"><br>
+      	Energi yang terdapat pada segelas susu adalah ....
+        <table cellpadding="10">
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal1" onclick="cek1()"/><span> Energi Gerak </span></label></td>
+          <td>
+            <div style="display: none;" id="q1s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal" id="q1soal2" onclick="cek1()"/><span> Energi Kimia </span></label></td>
+          <td>
+            <div style="display: none;" id="q1s2"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal3" onclick="cek1()"/><span> Energi Listrik</span></label></td>
+          <td>
+            <div style="display: none;" id="q1s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal4"  onclick="cek1()"/><span> Energi Panas </span></label></td>
+          <td>
+            <div style="display: none;" id="q1s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+ <!--Soal 2-->
+ <div class="soal" id="soal2sow" style="display:none;">
+    <img src="gambar/bola.gif" width="250px"><br>
+    Energi yang digunakan saat kita menggiring bola adalah ....
+      <table cellpadding="10">
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span>	Energi Listrik  </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span> Energi Gerak	 </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s2"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span> Energi Panas</span></label></td>
+        <td>
+          <div style="display: none;" id="q2s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> Energi Kimia  </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      </table>
+  </div>
+
+  <!--Soal 3-->
+  <div class="soal" id="soal3sow" style="display:none;">
+    <img src="gambar/kom.gif" width="250px"><br>
+    Energi untuk menghidupkan komputer adalah ....
+    <table cellpadding="10">
+    <tr>
+      <td><label><input type="radio" name="soal3"  id="q3soal1" onclick="cek3()"/><span> Energi Listrik</span></label></td>
+      <td>
+        <div style="display: none;" id="q3s1"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="radio" name="soal3" id="q3soal2" onclick="cek3()"/><span> Energi Kimia  </span></label></td>
+      <td>
+        <div style="display: none;" id="q3s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="radio" name="soal3"  id="q3soal3" onclick="cek3()"/><span> Energi Panas </span></label></td>
+      <td>
+        <div style="display: none;" id="q3s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="radio" name="soal3"  id="q3soal4" onclick="cek3()"/><span> Energi Gerak </span></label></td>
+      <td>
+        <div style="display: none;" id="q3s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div><br>
+<div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+  <h2>Jawaban Salah</h2>
+  Sayang sekali. Silahkan pelajari kembali materi pada halaman sebelumnya dengan penuh semangat.
+</div>
+<div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Jawaban benar</h2>
+  <br><p>Energi yang terdapat pada segelas susu adalah Energi Kimia</p>
+</div>
+<div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Jawaban benar</h2>
+  <br><p>Energi yang digunakan saat menggiring bola adalah Energi Gerak</p>
+</div>
+<div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Jawaban benar</h2>
+  <br><p>Energi untuk menghidupkan komputer adalah Energi Listrik</p>
+</div>
+</div>
+<br>
+  <center>
+  <button class="btnkecil" style="background:black;" id="tombol1" onclick="soal1_sow()" type="button">1</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombol2" onclick="soal2_sow()" type="button">2</button>
+  <button class="btnkecil" style="background: #07575B;"id="tombol3" onclick="soal3_sow()" type="button">3</button>
+  </center>
+  <br>
+</div>
+    <!--untuk mengakses file javascript-->
+    <script src="2.js"></script>
+    <script src="../../navigasi.js"></script>
+
+    <!--framework untuk MathJax/latex (untuk menulis rumus)-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="1.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button class="btn1">2</button></a>
+          <a href="../2/1.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/* Table */
+	.tbl {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+            overflow: scroll;
+            
+
+		}
+		.tbl th{
+            color: white;
+            font-size: 14px;
+            background-color: #07575B;
+            text-align: center;
+        }
+        .tbl td{
+            background-color:#07575B;
+            padding-left: 2%;
+            padding-right: 1%;
+            color: white;
+        }
+
+        .no{
+            width: 60px;
+            text-align: center;
+        }
+        .jenis{
+            width: 150px;
+        }
+
+        .kat{
+            width: 120px;
+            text-align: center;
+        }
+        .gambar{
+            width: 250px;
+            text-align: center;
+        }
+        .kwa{
+            width: 250px;
+        }
+        .mar{
+            width: 250px;
+        }
+        
+        @media screen and (max-width:600px){
+             .tbl td{
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+        }

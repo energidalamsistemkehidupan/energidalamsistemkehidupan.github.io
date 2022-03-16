@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="tabel.css">
+    <link rel="stylesheet" href="../navigasi.css">
+    <link rel="stylesheet" href="../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+   <!--header untuk judul sub bab-->
+   <div class="header">
+    <center>C.	Sumber Energi bagi Tubuh</center>
+</div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <nav class="sidebar">
+    <div class="text"><img src="../gambar/LOGO.png"></div>
+    <ul>
+      <li class="beranda"><a href="../../index.html">Beranda</a></li>
+      <li>
+        <a href="#"  class="energi">Energi
+          <span class="fas fa-caret-down first"></span>
+        </a>
+        <ul class="energi-tampil">
+          <li><a  
+                  href="../bab 1/1/1.html">Konsep Energi</a></li>
+      
+          <li><a  
+            href="../bab 1/2/1.html">Jenis-Jenis Energi</a></li>
+            
+          <li><a  
+            href="../bab 1/3/1.html">Perubahan Energi </a></li>
+            
+          <li><a
+            href="../bab 1/4/1.html">Hukum Kekekalan Energi</a></li>
+          <li><a href="../bab 1/Kuis/kuis1.html">Kuis 1</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="#" class="sumer">Sumber Energi
+          <span class="fas fa-caret-down second"></span>
+        </a>
+        <ul class="sumer-tampil" >
+          <li><a href="../bab 2/1.html" >Materi</a></li>
+          <li><a href="../bab 3/Kuis/kuis3.html">Kuis 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="sumber" style="color: cyan; background-color: #043436">Sumber Energi bagi Tubuh
+          <span class="fas fa-caret-down tiga"></span>
+        </a>
+        <ul class="sumber-tampil">
+          <li><a href="1.html" style="color: cyan;">Materi</a></li>
+          <li><a href="Kuis/kuis3.html">Kuis 3</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#" class="transformasi">Transformasi Energi dalam Sel
+        <span class="fas fa-caret-down empat"></span>
+      </a>
+      <ul class="transformasi-tampil">
+        <li><a href="../bab 4/1/1.html">Fenomena Transformasi Energi</a></li>
+        <li><a href="../bab 4/2/1.html">Metabolisme Sel</a></li>
+        <li><a href="../bab 4/3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+        <li><a href="../bab 4/Kuis/kuis4.html">Kuis 4</a></li>
+      </ul>
+    </li>
+      <li><a href="../Evaluasi/eva.html">EVALUASI</a></li>
+
+    </ul>
+</nav>
+<!-- javascript untuk navigasi-->
+<script>
+  function drop(){
+    $('nav ul .sumber-tampil').toggleClass("show2");
+  $('nav ul .tiga').toggleClass("rotate");
+   }
+</script>
+<!--class untuk konten-->
+<div class="content">
+  <br>
+  <h3> <img src="../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+<div class="canvas">
+   <div class="canvas">
+     <p><b>Petunjuk :</b></p>
+       <ol type="1" style="padding-left: 15px;">
+         <li>Perhatikan petunjuk soalnya.</li>
+         <li>Gunakan tombol dibawah soal untuk beralih ke soal lainnya.</li>
+         <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+       </ol>
+    </div>
+   <br>
+<div class="canvas">   
+<!--Soal 1-->
+<div class="soal" id="soal1sow" >
+  Dibawah ini yang menunjukkan fungsi dari karbohidrat antara lain … (Silahkan pilih 2 pilihan)
+  <table cellpadding="10">
+    <tr>
+      <td><label><input type="checkbox"  id="soal1" /><span> Sebagai penghemat protein dalam tubuh</span></label></td>
+      <td>
+        <div style="display: none;" id="s1b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s1s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox" id="soal2" /><span> Melarutkan vitamin vitamin A,D,E, dan K. </span></label></td>
+      <td>
+        <div style="display: none;" id="s2b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s2s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal3" /><span>	Membantu penyerapan kalsium</span></label></td>
+      <td>
+        <div style="display: none;" id="s3b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s3s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal4" /><span>	Mengganti sel tubuh yang rusak  </span></label></td>
+      <td>
+        <div style="display: none;" id="s4b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s4s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal5" /><span>	Membantu membangun jaringan tubuh</span></label></td>
+      <td>
+        <div style="display: none;" id="s5b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s5s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+  </table>
+
+<div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Penjelasan</h2>
+  Fungsi karbohidrat antara lain sebagai sumber energi (1 gram karbohidrat setara dengan 4 kalori), sebagai penghemat protein dalam tubuh, sebagai pengatur metabolisme lemak,	membantu melancarkan pencernaan dan	Membantu penyerapan kalsium
+  
+</div>
+ <br> <center>
+    <button class="btnvidio" style="background-color: teal;" onclick="ceksoal1();">Cek Jawaban</button>
+  </center>
+</div>
+<!--Soal 2-->
+<div class="soal" id="soal2sow" style="display:none;">
+  Dibawah ini yang menunjukkan fungsi dari protein antara lain … (Silahkan pilih 2 pilihan)
+  <table cellpadding="10">
+    <tr>
+      <td><label><input type="checkbox"  id="soal6" /><span> Sebagai pengatur metabolisme lemak</span></label></td>
+      <td>
+        <div style="display: none;" id="s6b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s6s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox" id="soal7" /><span> Melarutkan vitamin vitamin A,D,E, dan K. </span></label></td>
+      <td>
+        <div style="display: none;" id="s7b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s7s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal8" /><span>	Membantu penyerapan kalsium</span></label></td>
+      <td>
+        <div style="display: none;" id="s8b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s8s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal9" /><span>	Mengganti sel tubuh yang rusak  </span></label></td>
+      <td>
+        <div style="display: none;" id="s9b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s9s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal10" /><span>	Membantu membangun jaringan tubuh</span></label></td>
+      <td>
+        <div style="display: none;" id="s10b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s10s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+  </table>
+
+<div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Penjelasan</h2>
+  Fungsi protein antara lain sebagai sumber energi (1 gram karbohidrat setara dengan 4 kalori), sebagai pembangun sel jaringan tubuh dan sebagai pengganti sel tubuh yang rusak 
+  
+</div>
+<br>
+  <center>
+    <button class="btnvidio" style="background-color: teal;" onclick="ceksoal2();">Cek Jawaban</button>
+  </center>
+</div>
+
+<!--Soal 3-->
+<div class="soal" id="soal3sow" style="display:none;">
+  Dibawah ini yang menunjukkan fungsi dari lemak antara lain … (Silahkan pilih 2 pilihan)
+  <table cellpadding="10">
+    <tr>
+      <td><label><input type="checkbox"  id="soal11" /><span> Sebagai penghemat protein dalam tubuh</span></label></td>
+      <td>
+        <div style="display: none;" id="s11b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s11s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox" id="soal12" /><span> Sebagai pelindung organ dalam </span></label></td>
+      <td>
+        <div style="display: none;" id="s12b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s12s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal13" /><span>	Membantu penyerapan kalsium</span></label></td>
+      <td>
+        <div style="display: none;" id="s13b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s13s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal14" /><span>	Menjaga suhu tubuh   </span></label></td>
+      <td>
+        <div style="display: none;" id="s14b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s14s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><label><input type="checkbox"  id="soal15" /><span>	Membantu membangun jaringan tubuh</span></label></td>
+      <td>
+        <div style="display: none;" id="s15b"><img style="width: 20px;" src="../gambar/benar.png"></div>
+        <div style="display: none;" id="s15s"><img style="width: 20px;" src="../gambar/salah.png"></div>
+      </td>
+    </tr>
+  </table>
+
+<div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Penjelasan</h2>
+  Fungsi lemak antara lain sebagai sumber energi (1 gram karbohidrat setara dengan 9 kalori), melarutkan vitamin A,D,E, dan K, menjaga suhu tubuh dan melindungi organ
+   
+  
+</div>
+<br>
+  <center>
+    <button class="btnvidio" style="background-color: teal;" onclick="ceksoal3();">Cek Jawaban</button>
+  </center>
+</div>
+<!--Soal 4-->
+<div class="soal" id="soal4sow" style="display:none;">
+  	Pilihlah jawaban yang benar sesuai dengan gambar termasuk dalam kategori mana!
+<table class="tbl">
+  <tr>
+    <th class="no">No.</th>
+    <th class="gambar">Gambar</th>
+    <th class="jenis">Kategori</th>
+  </tr>
+  <!--soal A-->
+  <tr>
+   <td class="no">A.</td>
+    <td class="gambar"><img src="gambar/ayam.jpeg" width="150px"></td>
+    <td class="jenis" id="pil1">
+       <label><input type="radio" name="pilihan1"  /><span>  Karbohidrat</span></label>
+       <br>
+       <label><input type="radio" name="pilihan1" id="s1benar"  /><span>  Protein Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan1"  /><span>  Protein Nabati</span></label>
+       <br>
+       <label><input type="radio" name="pilihan1"  /><span>  Lemak Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan1"  /><span>  Lemak Nabati</span></label>
+       <br>
+   </td>
+  </tr>
+  
+  <!--soal B-->
+  <tr>
+   <td class="no">B.</td>
+    <td class="gambar"><img src="gambar/minyak.jpeg" width="150px"></td>
+    <td class="jenis" id="pil2">
+      <label><input type="radio" name="pilihan2"  /><span>  Karbohidrat</span></label>
+       <br>
+       <label><input type="radio" name="pilihan2"   /><span>  Protein Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan2"   /><span>  Protein Nabati</span></label>
+       <br>
+       <label><input type="radio" name="pilihan2"  /><span>  Lemak Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan2"  id="s2benar" /><span>  Lemak Nabati</span></label>
+       <br>
+   </td>
+  </tr>
+
+  <!--soal C-->
+  <tr>
+   <td class="no">C.</td>
+    <td class="gambar"><img src="gambar/roti.jpeg" width="150px"></td>
+    <td class="jenis" id="pil3">
+      <label><input type="radio" name="pilihan3" id="s3benar"  /><span>  Karbohidrat</span></label>
+       <br>
+       <label><input type="radio" name="pilihan3"  /><span>  Protein Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan3"  /><span>  Protein Nabati</span></label>
+       <br>
+       <label><input type="radio" name="pilihan3"  /><span>  Lemak Hewani</span></label>
+       <br>
+       <label><input type="radio" name="pilihan3"  /><span>  Lemak Nabati</span></label>
+       <br>
+   </td>
+  </tr>
+
+</table>
+<br>
+<center>
+ <button class="btnvidio" style="background-color: teal;" onclick="ceksoal4();">Cek Jawaban</button>
+</center>     
+
+</div>
+<!--soal 5-->
+<div class="soal" id="soal5sow" style="display:none;">
+Rendi mengonsumsi makanan yang mengandung lemak 8 gram, protein 27 gram, dan karbohidrat 30 gram.Dengan mengonsumsi makanan tersebut, tubuh Rendi mendapatkan pasokan energi sebanyak … 
+<table cellpadding="10">
+<tr>
+<td><label><input type="radio" name="soalno5"  id="q5soal1"  onclick="ceksoal5()"/><span> 290 kalori</span></label></td>
+<td>
+  <div style="display: none;" id="q5s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
+</td>
+</tr>
+<tr>
+<td><label><input type="radio" name="soalno5" id="q5soal2" onclick="ceksoal5()"/><span> 300 kalori	 </span></label></td>
+<td>
+  <div style="display: none;" id="q5s2"><img style="width: 30px;" src="../gambar/benar.png"></div>
+</td>
+</tr>
+<tr>
+<td><label><input type="radio" name="soalno5"  id="q5soal3" onclick="ceksoal5()"/><span> 250 kalori </span></label></td>
+<td>
+  <div style="display: none;" id="q5s3"><img style="width: 30px;" src="../gambar/salah.png"></div>
+</td>
+</tr>
+<tr>
+<td><label><input type="radio" name="soalno5"  id="q5soal4" onclick="ceksoal5()"/><span> 395 kalori </span></label></td>
+<td>
+  
+  <div style="display: none;" id="q5s4"><img style="width: 30px;" src="../gambar/salah.png"></div>
+</td>
+</tr>
+</table>
+<br>
+  <div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+    <h2>Jawaban Salah</h2>
+    Sayang sekali. Silahkan pelajari kembali materi pada halaman sebelumnya dengan penuh semangat.
+  </div>
+  <div id="jawabanbenar5" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+    <h2>Jawaban benar</h2>
+    <br><p><b>Diketahui:</b></p>
+              <p>lemak  = 8 g  × 9 = 72 kalori (setiap 1 g lemak sama dengan 9 kalori)</p>
+              <p>protein  = 27 g × 4 = 108 kalori (setiap 1 g protein sama dengan 4 kalori)</p>
+              <p>karbohidrat  = 30 g × 4 = 120 kalori (setiap 1 g karbohidrat sama dengan 4 kalori)</p><br>
+              <p><b>Ditanya : Jumlah pasokan energi = …?</b></p><br>
+              <p><b>Jawab:</b></p>
+              <p>Jumlah pasokan energi = karbohidrat + protein + lemak</p>
+              <p>Jumlah pasokan energi = 120 + 108 + 72</p>
+              <p>Jumlah pasokan energi = 300 kalori</p><br>
+              <p>Sehingga, jumlah pasokan energi pada tubuh Rendi adalah 300 kalori.</p>
+    </div>
+    </div>
+</div>
+</div>
+<br>
+<center>
+<button class="btnkecil" style="background:black;" id="tombol1" onclick="soal1_sow()" type="button">1</button>
+<button class="btnkecil" style="background: #07575B;" id="tombol2" onclick="soal2_sow()" type="button">2</button>
+<button class="btnkecil" style="background: #07575B;"id="tombol3" onclick="soal3_sow()" type="button">3</button>
+<button class="btnkecil" style="background: #07575B;"id="tombol4" onclick="soal4_sow()" type="button">4</button>
+<button class="btnkecil" style="background: #07575B;"id="tombol5" onclick="soal5_sow()" type="button">5</button>
+</center>
+<br>
+</div>
+    <!--untuk mengakses file javascript-->
+    <script src="../navigasi.js"></script>
+    <script src="4.js"></script>
+
+ <!--footer halaman yang berisi navigasi page halaman-->
+ <div class="footer">
+  <div class="navigasibawah">
+    <center>
+      <a href="3.html"><button >Sebelumnya</button></a>
+      <a href="1.html"><button >1</button></a>
+      <a href="2.html"><button >2</button></a>
+      <a href="3.html"><button >3</button></a>
+      <a href="4.html"><button class="btn1">4</button></a>
+      <a href="Kuis/kuis3.html"><button >Selanjutnya</button></a>
+    </center>
+  </div>
+  </div>
+  </body>
+</html>

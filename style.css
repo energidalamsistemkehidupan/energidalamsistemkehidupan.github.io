@@ -1,0 +1,64 @@
+body{
+	text-align: center;
+	padding-top: 20px;
+	background-color:#07575B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.judul h1{
+	font-size: 40px;
+  color: #07575B;
+  background-color: white;
+  width: 60%;
+  border-radius: 10px;
+}
+img{
+	filter: brightness(#07575B);
+}
+
+.menu-pilih{
+	width: 80%;
+	border-radius: 20px;
+	color:#07575B;
+
+}
+.menu-pilih button{
+	background-color: white;
+	border-color: transparent;
+}
+
+.menu-pilih button:hover{
+	background-color: #043436;
+	border-color: transparent;
+}
+
+.menu-pilih img{
+	width:100px;
+	height:100px;
+}
+
+.menu-pilih span{
+	margin: 3%;
+	display: inline-block;
+}
+
+.menu-pilih a{
+	font-size: large;
+	font-weight: 700;
+	text-decoration: none;
+	color: #07575B;
+}
+
+.menu-pilih a:hover{
+	text-decoration: none;
+	color: white;
+	color: cyan;
+	}
+
+#footer{
+	padding-top: 10%;
+  color: white;
+  font-size: 15px;
+}

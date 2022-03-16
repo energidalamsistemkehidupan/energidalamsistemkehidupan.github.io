@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energi dalam Sistem Kehidupan</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="drop();">
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>D.	Transformasi Energi dalam Sel</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text"><img src="../../gambar/LOGO.png"></div>
+      <ul>
+        <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+        <li>
+          <a href="#"  class="energi">Energi
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="energi-tampil">
+            <li><a 
+                    href="../../bab 1/1/1.html">Konsep Energi</a></li>
+        
+            <li><a  
+              href="../../bab 1/2/1.html">Jenis-Jenis Energi</a></li>
+              
+            <li><a  
+              href="../../bab 1/3/1.html">Perubahan Energi </a></li>
+              
+            <li><a  
+              href="../../bab 1/4/1.html">Hukum Kekekalan Energi</a></li>
+            <li><a href="../../bab 1/Kuis/kuis1.html">Kuis 1</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#" class="sumer">Sumber Energi
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="sumer-tampil">
+            <li><a href="../../bab 2/1.html">Materi</a></li>
+            <li><a href="../../bab 2/Kuis/kuis2.html">Kuis 2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="sumber">Sumber Energi bagi Tubuh
+            <span class="fas fa-caret-down tiga"></span>
+          </a>
+          <ul class="sumber-tampil">
+            <li><a href="../../bab 3/1.html">Materi</a></li>
+            <li><a href="../../bab 3/Kuis/kuis3.html">Kuis 3</a></li>
+          </ul>
+        </li>
+        <li>
+        <a href="#" class="transformasi" style="color: cyan; background-color: #043436">Transformasi Energi dalam Sel
+          <span class="fas fa-caret-down empat"></span>
+        </a>
+        <ul class="transformasi-tampil">
+          <li><a href="../1/1.html">Fenomena Transformasi Energi</a></li>
+          <li><a href="1.html"  style="color: cyan;">Metabolisme Sel</a></li>
+          <li><a href="../3/1.html">Metabolisme Karbohidrat, Lemak dan Protein</a></li>
+          <li><a href="../Kuis/kuis4.html">Kuis 4</a></li>
+        </ul>
+      </li>
+        <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+  
+      </ul>
+  </nav>
+  <!-- javascript untuk navigasi-->
+  <script>
+    function drop(){
+      $('nav ul .transformasi-tampil').toggleClass("show3");
+$('nav ul .empat').toggleClass("rotate");
+     }
+  </script>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        b.	Respirasi
+      </div>
+      <div class="canvas">
+        <p>&nbsp &nbsp &nbsp Respirasi, yaitu suatu proses pembebasan energi yang tersimpan dalam zat sumber energi melalui proses kimia dengan menggunakan oksigen. Dari respirasi, dihasilkan energi kimia untuk kegiatan kehidupan, seperti sintesis (anabolisme), gerak, dan pertumbuhan. Adapun reaksi respirasi sebagai berikut:</p>
+        <b> <center><p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub>  &xrarr; 6CO<sub>2</sub> + 6H<sub>2</sub>O + Energi</p></center></b>
+      </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
+      <div class="canvas">&nbsp &nbsp &nbsp Untuk membuktikan bahwa pada makhluk hidup terjadi proses respirasi, tontonlah video demonstrasi berikut ini. <b>Simaklah agar anda dapat menjawab kuis dengan mudah.</b>
+        <br>
+        <center>
+          <video id="vidio" controls>
+            <source src="../gambar/migrasi hewan.mp4">
+          </video>
+        </center>
+        <br>
+        <!--untuk kontrol vidio-->
+        <div class="canvas"	>
+          <center>
+            <button class="btnvidio" onclick="burung()" type="button">Burung</button>
+            <button class="btnvidio" onclick="salmon()" type="button">Ikan Salmon</button>
+            <button class="btnvidio" onclick="penyu()" type="button">Penyu</button>
+            <button class="btnvidio" onclick="lobster()" type="button">Lobster Duri</button>
+            <button class="btnvidio" onclick="bakteri()" type="button">Bakteri</button>
+          </center>
+        </div>
+        <br>
+      </div>
+    <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+       <div class="sebelum" style="color: #f38630;">
+          <center>
+            <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDEO</b>
+          </center>
+      </div>
+      <div class="kesimpulan">
+        <ul>
+          <li>Maka dapat disimpulkan bahwa serangga menggunakan oksigen untuk respirasi, kita bisa juga menghitung volume oksigen yang dibutuhkan untuk respirasi serangga percobaan. Semakin besar serangga semakin besar juga kebutuhan oksigennya. Maka dari itu berat serangga adalah salah satu faktor yang mempengaruhi proses respirasi.</li>
+      </ul>
+      </div>
+      </div>
+      <br>
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+   <div class="canvas">
+    <div class="sebelum" style="color: #f38630;">
+    <center>
+      <b>LATIHAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDEO</b>
+    </center>
+  </div>
+<div class="latihanhide">
+       <div class="canvas">
+         <p><b>Petunjuk :</b></p>
+           <ol type="1" style="padding-left: 15px;">
+             <li>Soal berupa pilihan ganda berjumlah dua soal.</li>
+             <li>Gunakan tombol dibawah soal untuk beralih ke soal lainnya.</li>
+             <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+           </ol>
+        </div>
+       <br>
+    <div class="canvas">   
+    <!--Soal 1-->
+    <div class="soal" id="soal1sow" >
+      	Berdasarkan video di atas, fungsi dari kristal KOH/NaOH pada uji laju respirasi serangga adalah … 
+        <table cellpadding="10">
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal1" onclick="cek1()"/><span>  Mengikat karbon dioksida </span></label></td>
+          <td>
+            <div style="display: none;" id="q1s1"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal" id="q1soal2" onclick="cek1()"/><span>	Indikator laju respirasi</span></label></td>
+          <td>
+            <div style="display: none;" id="q1s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal3" onclick="cek1()"/><span>  Sumber oksigen untuk serangga</span></label></td>
+          <td>
+            <div style="display: none;" id="q1s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="q1soal4"  onclick="cek1()"/><span>  Mempercepat laju respirasi</span></label></td>
+          <td>
+            <div style="display: none;" id="q1s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+ <!--Soal 2-->
+ <div class="soal" id="soal2sow" style="display:none;">
+  	Berdasarkan video di atas, faktor yang  mempengaruhi proses respirasi kecuali ….
+      <table cellpadding="10">
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span>	Besar/kecilnya serangga tidak mempengaruhi kebutuhan oksigennya  </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span>	Besarnya serangga berbanding terbalik dengan kebutuhan oksigennya </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span>	Semakin besar serangga makin sedikit kebutuhan oksigennya</span></label></td>
+        <td>
+          <div style="display: none;" id="q2s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><label><input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> Semakin besar serangga makin besar kebutuhan oksigennya  </span></label></td>
+        <td>
+          <div style="display: none;" id="q2s4"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+        </td>
+      </tr>
+      </table>
+  </div>
+<br> 
+</div><br>
+<div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+  <h2>Jawaban Salah</h2>
+  Sayang sekali. Silahkan pelajari kembali materi dengan penuh semangat.
+</div>
+<div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Jawaban benar</h2>
+  <br><p>Fungsi dari kristal KOH/NaOH pada uji laju respirasi serangga adalah untuk mengikat karbon dioksida</p>
+</div>
+<div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:teal;color: teal;">
+  <h2>Jawaban benar</h2>
+  <br><p>Faktor yang  mempengaruhi proses respirasi adalah semakin besar serangga makin besar kebutuhan oksigennya </p>
+</div><br>
+  <center>
+  <button class="btnkecil" style="background:black;" id="tombol1" onclick="soal1_sow()" type="button">1</button>
+  <button class="btnkecil" style="background: #07575B;" id="tombol2" onclick="soal2_sow()" type="button">2</button>
+  <br>
+</div><br>
+    </div></div>
+    <!--untuk mengakses file javascript-->
+    <script src="3.js"></script>
+    <script src="../../navigasi.js"></script>
+
+    <!--framework untuk MathJax/latex (untuk menulis rumus)-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="2.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button class="btn1">3</button></a>
+          <a href="../3/1.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>
