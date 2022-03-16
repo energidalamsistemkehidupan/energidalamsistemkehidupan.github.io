@@ -1,88 +1,82 @@
-
+body{
+	background-color: #043436;
+	margin: 0px;
+}
 .header{
-	float: left;
-	width:100%;
-	height:15%;
-	margin-top: 2%;
-	font-family:arial;
-	font-size:8pt;
-	color:#32404E;
-	text-align:center;
+  background-color: #07575B;
+  height: 20%;
+  width: 100%;
+  top: 0;
+  left: 0; 
 }
-.laygambar{
-	padding-top: 8%;
-	float: left;
-	width:100%;
-	height:50%;
-}
-.margin{
-	margin-left: 12%;
-}
-.gambaricon{
-float:left;
-	width:10%;
-	height:10%;
-transition: all .2s ease-in-out; 
-margin-left:2%;
-
-}
-.gambaricon img{
-	width: 100%;
-}
-.kembali{
-	float:left;
-	width:100%;
-	height:10%;
-}
-.kembali img{
-	width: 5%;
-	padding-left: 90%;
-}
-footer{
-	float: left;
-	width:20%;
-	height:5%;
-	margin-top: -5%;
-	margin-left: 40%;
-	border-radius:25px;
-	background:#008EB8;
-	font-family:arial;
-	font-size:8pt;
-	color:white;
-	opacity:0.7;
-	padding-top: 1%;
-	padding-bottom: 1%;
-
+.header h1{
+	font-size: 40px;
+	width: 60%;
+	border-radius: 10px;
+	background-color: white;
+	color: #07575B;
+	text-align: center;
 }
 
-/*css3 design scrollbar*/
-::-webkit-scrollbar {
-    width: 10px;
+.content{
+	background-color: #043436;
 }
- 
-::-webkit-scrollbar-track {     
-    background: white;    
+
+h2{
+	font-size: 25px;
 }
- 
-::-webkit-scrollbar-thumb {
-    background: #257C9F;
-	border-radius:10px;
+
+
+.ki{
+background-color: white;
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
 }
-.nav{
-	display: none;
+.ki li{
+	text-align: justify;
+	font-size: 20px;
+	line-height: 25px;
 }
-.menu{
-	display: none;
-}
-.nav{
-	display: none;
-}
-.gambaricon:hover{
-transform: scale(1.5);
-}
-.iconabout:hover{
-transform: scale(1.8);
-}
+	.dapus{
+		background-color: white;
+		  width: 90%;
+		  border: 2px solid black;
+		  border-radius: 30px;
+		  padding: 10px;
+		  margin: 5px;
+		  align-items: center;
+		}
+		.dapus p{
+			text-align: justify;
+			font-size: 20px;
+		}
+
+		.myButton {
+			background-color:white;
+			border-radius:13px;
+			border:1px solid black;
+			display:inline-block;
+			cursor:pointer;
+			color:#07575B;
+			font-family:Arial;
+			font-size:18px;
+			font-weight:bold;
+			padding:15px 25px;
+			text-decoration:none;
+		}
+		.myButton:hover {
+			background-color:#07575B;
+			color: cyan;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+
 /*Tampilan hp*/
 @media screen and (max-width:760px){
 	.header{
